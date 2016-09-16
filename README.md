@@ -18,9 +18,5 @@ sh create_pullreq.sh $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')
 //cureentブランチのissueタイトルをコピーする
 ghi list |grep $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')|pbcopy
 
-pullreqmessage.txt
---------------------------------------------
-
---------------------------------------------
 
 
