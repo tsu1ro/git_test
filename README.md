@@ -10,7 +10,7 @@ git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g'
 
 
 
-template.sh
+pullreqmessage.txt
 --------------------------------------------
 [#ticket-no][WIP][Task/Bug]
 
