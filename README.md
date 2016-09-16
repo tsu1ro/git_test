@@ -8,14 +8,19 @@ This is the test.
 //issue番号のみ取り出す
 git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g'
 
+//プルリクをつくるシェルをたたくコマンド
+sh create_pullreq.sh $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')
+
 
 
 pullreqmessage.txt
 --------------------------------------------
 [#ticket-no][WIP][Task/Bug]
 
+To @tsu1ro
+
 ## 対象チケット
-https://github.com/user-name/hogehoge/ticket-no
+fixed https://github.com/tsu1ro/git_test/issues/3
 
 ## 対応内容
 
