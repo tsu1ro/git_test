@@ -11,22 +11,16 @@ git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g'
 //プルリクをつくるシェルをたたくコマンド
 sh create_pullreq.sh $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')
 
+//プライベートモードで開く
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito
 
+
+//cureentブランチのissueタイトルをコピーする
+ghi list |grep $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')|pbcopy
 
 pullreqmessage.txt
 --------------------------------------------
-[#ticket-no][WIP][Task/Bug]
 
-To @tsu1ro
-
-## 対象チケット
-fixed https://github.com/tsu1ro/git_test/issues/3
-
-## 対応内容
-
-### PR ステータス
- - [ ] 実装完了
- - [ ] レビュー
- - [ ] レビュー指摘対応
- - [ ] 完了
 --------------------------------------------
+
+

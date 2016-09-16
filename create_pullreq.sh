@@ -15,7 +15,9 @@ fi
 
 
 echo 'Create temporary format file.'
-sed -e "s/ticket-no/$1/g" ~/.pullreqmessage.txt > ~/.pullreqmessage_temp.txt
+title=`ghi list |grep $(git symbolic-ref --short HEAD | sed -e 's/[^0-9]//g')`
+echo $title
+sed -e "s/ticket-no/$1/g" -e "s/title/$title/g" ~/.pullreqmessage.txt > ~/.pullreqmessage_temp.txt
 
 echo 'Exec Pull Request'
 hub pull-request --browse -F ~/.pullreqmessage_temp.txt
