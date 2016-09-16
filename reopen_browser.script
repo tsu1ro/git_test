@@ -1,0 +1,10 @@
+tell application "Google Chrome"
+  quit
+end tell
+
+delay 0.5
+
+tell application "Google Chrome"
+  activate
+  open location "http://example.com"
+end tell
