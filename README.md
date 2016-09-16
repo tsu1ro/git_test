@@ -1,2 +1,2 @@
 # git_test
-これはテストです。
+This is the test.
