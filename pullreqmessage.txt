@@ -3,7 +3,7 @@
 To @tsu1ro
 
 ## 対象チケット
-fixed https://github.com/tsu1ro/git_test/issues/3
+fixed https://github.com/tsu1ro/git_test/issues/#ticket-no
 
 ## 対応内容
 
